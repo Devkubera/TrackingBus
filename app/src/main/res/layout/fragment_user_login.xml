@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserLoginFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_location" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="75dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BUS TRACK APPLICATION"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:shadowRadius="3"
+            android:shadowColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="แอปพลิเคชันติดตามรถโดยสาร"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:shadowRadius="3"
+            android:shadowColor="@color/black"
+            android:fontFamily="@font/sarabun_light"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_signIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#FFFFFF"
+                android:drawableLeft="@drawable/googleg_standard_color_18"
+                android:fontFamily="@font/sarabun_medium"
+                android:onClick="userSignin"
+                android:text="@string/login_label"
+                android:textColor="@color/nav_bg"
+                android:layout_gravity="center"
+                app:iconTint="#FF0000" />
+
+            <Button
+                android:onClick="gotoDriverLogin"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="เมนูสำหรับพนักงานขับรถ"
+                android:textColor="@color/nav_bg"
+                android:fontFamily="@font/sarabun_medium" />
+
+        </LinearLayout>
+
+</FrameLayout>

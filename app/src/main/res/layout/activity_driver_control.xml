@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    tools:context=".DriverControlActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background_location" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="20dp"
+           android:orientation="vertical">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="110dp"
+               android:background="#494949">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentEnd="true"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="16dp"
+                   android:layout_marginEnd="81dp"
+                   android:fontFamily="@font/sarabun_medium"
+                   android:text="@string/switch_gps"
+                   android:textColor="@color/white"
+                   android:textSize="16dp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <Switch
+                   android:id="@+id/switch_gps"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentBottom="true"
+                   android:layout_gravity="center"
+                   android:layout_marginEnd="140dp"
+                   android:layout_marginBottom="10dp"
+                   android:gravity="center"
+                   android:minWidth="48dp"
+                   android:minHeight="48dp"
+                   android:onClick="onSwitch"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   tools:layout_editor_absoluteY="46dp" />
+
+           </RelativeLayout>
+
+           <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="25dp">
+
+                       <TextView
+                           android:fontFamily="@font/sarabun_light"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:text="ละติจูด"
+                           android:textColor="@color/white"
+                           android:id="@+id/latitude"/>
+
+                       <TextView
+                           android:fontFamily="@font/sarabun_light"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:text="ลองจิจูด"
+                           android:textColor="@color/white"
+                           android:id="@+id/longtitude"/>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:visibility="gone"
+                   android:layout_marginTop="15dp">
+
+                       <TextView
+                           android:fontFamily="@font/sarabun_light"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:text="Country"
+
+                           android:textColor="@color/white"
+                           android:id="@+id/country"/>
+
+                       <TextView
+                           android:fontFamily="@font/sarabun_light"
+                           android:layout_width="0dp"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:text="Locality"
+                           android:textColor="@color/white"
+                           android:id="@+id/address"/>
+
+               </LinearLayout>
+
+               <LinearLayout
+                   android:visibility="gone"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="15dp">
+
+                       <TextView
+                           android:fontFamily="@font/sarabun_light"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Address"
+                           android:textColor="@color/white"
+                           android:id="@+id/address_detail"/>
+
+               </LinearLayout>
+
+       </LinearLayout>
+
+        <Button
+            android:onClick="Checkin"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/sarabun_medium"
+            android:id="@+id/bt_location"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/nav_bg"
+            android:text="@string/button_checkin" />
+
+
+        <Button
+            android:layout_marginTop="150dp"
+            android:onClick="driverLogout"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/nav_yellow"
+            android:text="ออกจากระบบ"
+            android:textColor="@color/nav_bg"
+            android:fontFamily="@font/sarabun_medium"
+            android:layout_gravity="center"/>
+
+</FrameLayout>

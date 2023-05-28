@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:background="@color/nav_bg">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_location" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="@font/sarabun_medium"
+            android:textColor="@color/white"
+            android:text="กรุณารอคนขับสักครู่..." />
+
+        <LinearLayout
+            android:id="@+id/linear_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sarabun_medium"
+                android:shadowColor="@color/black"
+                android:shadowRadius="20"
+                android:text="สถานะตำแหน่งรถ"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <!-- if display in another large screen phone -->
+            <!-- set layout_height = 400 dp -->
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                tools:context=".MapsFragment" />
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/linear"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/map"-->
+<!--                android:background="@color/white"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:padding="10dp">-->
+
+            <Button
+                android:id="@+id/btn_maps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/nav_notification"
+                android:fontFamily="@font/sarabun_medium"
+                android:text="ดูบน Google Maps"
+                android:textColor="@color/white"
+                app:icon="@drawable/ic_baseline_map_24" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

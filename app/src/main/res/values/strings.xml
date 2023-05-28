@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Bus Track</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- login page -->
+
+    <string name="login"><b>เข้าสู่ระบบ</b></string>
+    <string name="login_for_user"><b>(สำหรับผู้ใช้งานทั่วไป)</b></string>
+    <string name="login_for_driver"><b>(สำหรับผู้ขับรถ)</b></string>
+    <string name="email">อีเมล</string>
+    <string name="password">รหัสผ่าน</string>
+    <string name="rec_register"><b><u>สมัครสมาชิก</u></b></string>
+    <string name="rec_back"><b><u>กลับไปก่อนหน้า</u></b></string>
+    <string name="rec_reset_password"><b><u>ลืมรหัสผ่าน</u></b></string>
+    <!-- register page -->
+
+    <string name="register"><b>สมัครสมาชิก</b></string>
+    <string name="next"><b>ต่อไป</b></string>
+    <string name="password_confirm">ยืนยันรหัสผ่าน</string>
+    <string name="register_name">ชื่อ-สกุล</string>
+    <string name="register_phone">เบอร์โทรศัพท์</string>
+    <string name="person_card">รูปถ่ายบัตรประชาชนด้านหน้า</string>
+    <string name="riding_card">รูปถ่ายใบขับขี่สาธารณะ</string>
+    <string name="bus_picture">ภาพของรถโดยสาร</string>
+    <string name="bus_number">หมายเลขทะเบียนรถ</string>
+    <string name="username">ชื่อผู้ใช้</string>
+    <string name="fill_name">โปรดระบุชื่อและนามสกุล</string>
+    <string name="fill_email">โปรดระบุอีเมล</string>
+    <string name="fill_email_right">โปรดระบุอีเมลให้ถูกต้อง</string>
+    <string name="fill_phone">โปรดระบุหมายเลขโทรศัพท์</string>
+    <string name="fill_car_number">โปรดระบุทะเบียนรถ</string>
+    <string name="fill_pwd">โปรดระบุรหัสผ่าน</string>
+    <string name="fill_pwd_lenght">รหัสผ่านต้องมากกว่า 8 อักษรขึ้นไป</string>
+    <string name="fill_pwd_con">โปรดยืนยันรหัสผ่าน</string>
+    <string name="fill_pwd_match">รหัสผ่านไม่ตรงกัน</string>
+    <string name="fill_person">อัปโหลดบัตรประชาชนสำเร็จ</string>
+    <string name="fill_public">อัปโหลดใบขับขี่สำเร็จ</string>
+    <string name="fill_pic_car">อัปโหลดรูปภาพรถสำเร็จ</string>
+    <string name="fill_pic">โปรดอัปโหลดรูปภาพ</string>
+    <string name="fill_user_success">ลงทะเบียนผู้ใช้งานสำเร็จ</string>
+    <string name="fill_dv_success">ลงทะเบียนผู้ขับรถสำเร็จ</string>
+    <string name="fill_login_success">เข้าสู่ระบบสำเร็จ</string>
+    <string name="fill_login_error">เกิดข้อผิดพลาดในการเข้าสู่ระบบ</string>
+    <string name="fill_login_match">อีเมลหรือรหัสผ่านไม่ถูกต้อง</string>
+    <string name="user_wrong_login">อีเมลของท่านไม่ได้ลงทะเบียนที่ระบบผู้ขับรถ</string>
+    <string name="login_label">เข้าสู่ระบบด้วย Gmail</string>
+
+    <!-- Driver Control Page -->
+    <string name="button_checkin">เช็คอิน</string>
+    <string name="switch_gps">เปิดสวิตซ์เพื่อเริ่มเดินทาง</string>
+
+    <!-- Driver Reset Password Page -->
+    <string name="forgot_password"><b>ลืมรหัสผ่าน</b></string>
+    <string name="reset_password"><b>รีเซ็ตรหัสผ่าน</b></string>
+    <string name="reset_request_confirm">คำขอถูกส่งไปยังอีเมลของท่านแล้ว</string>
+    <string name="reset_error">เกิดข้อผิดพลาดในการดำเนินการ กรุณาลองอีกครั้ง</string>
+    <string name="reset_back"><b>กลับไปก่อนหน้า</b></string>
+</resources>

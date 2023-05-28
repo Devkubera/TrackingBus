@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "614360204332",
+    "firebase_url": "https://tracking-car-48339-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "tracking-car-48339",
+    "storage_bucket": "tracking-car-48339.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:614360204332:android:101efa04a333ebcc68bd89",
+        "android_client_info": {
+          "package_name": "com.example.projectandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "614360204332-2sekfpb3s2ktnck2u82ofpqhftlsvdvr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projectandroid",
+            "certificate_hash": "27a441785c3584e3f5c3c4e298605a721c8cde16"
+          }
+        },
+        {
+          "client_id": "614360204332-o34c7ij5ohfheuod83otumsh9gb3lrfk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClxpiG3RIj2S94uQz1ZuxGdfIuAYEK4Y4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "614360204332-o34c7ij5ohfheuod83otumsh9gb3lrfk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

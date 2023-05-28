@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationFragment"
+    android:background="@color/nav_bg">
+
+    <Button
+        android:id="@+id/btn_goAway"
+        android:onClick="btn_goAway"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/nav_bg"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/sarabun_medium"
+        android:text="รอบ มทส. - บขส." />
+
+    <Button
+        android:id="@+id/btn_returnWay"
+        android:onClick="btn_returnWay"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/nav_bg"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/sarabun_medium"
+        android:text="รอบ บขส. - มทส." />
+
+</FrameLayout>

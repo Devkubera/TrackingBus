@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/nav_bg"
+    android:orientation="vertical"
+    tools:context=".UserLoginFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="652dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/loginUserTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="183dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="154dp"
+                android:fontFamily="@font/sarabun_light"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/loginUserLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginUserTxt"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="163dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="123dp"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:fontFamily="@font/sarabun_light"
+                android:text="@string/login_for_user"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:drawableTint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/loginUserEmail"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginUserLabel"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:fontFamily="@font/sarabun_light"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                android:textColor="@color/nav_bg"
+                android:textColorHint="@color/nav_bg"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/loginUserPassword"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginUserEmail"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:ems="10"
+                android:fontFamily="@font/sarabun_light"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textColor="@color/nav_bg"
+                android:textColorHint="@color/nav_bg"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/loginUserButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginUserPassword"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="@color/nav_yellow"
+                android:fontFamily="@font/sarabun_light"
+                android:onClick="gotoBus"
+                android:text="@string/login"
+                android:textColor="@color/nav_bg"
+                app:icon="@drawable/ic_baseline_login_24"
+                app:iconTint="@color/nav_bg" />
+
+            <TextView
+                android:id="@+id/loginUserReccom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginUserButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/sarabun_light"
+                android:onClick="gotoRegister"
+                android:text="@string/rec_register"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

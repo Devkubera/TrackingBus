@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CardPersonFragment"
+    android:background="@color/nav_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/regisDriverBtn_card_person"
+            android:layout_width="384dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="13dp"
+            android:backgroundTint="@color/nav_yellow"
+            android:fontFamily="@font/sarabun_light"
+            android:text="@string/person_card"
+            android:textColor="@color/nav_bg"
+            android:textSize="14sp"
+            app:icon="@drawable/ic_baseline_image_24"
+            app:iconTint="@color/nav_bg" />
+
+        <ImageView
+            android:id="@+id/regisDriverCar_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regisDriverBtn_card_person"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="192dp" />
+
+        <TextView
+            android:id="@+id/regisDriverCar_picture_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regisDriverCar_picture"
+            android:layout_centerInParent="true"
+            android:text="picture name"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/regisDriverBtn_car_picture_next"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regisDriverCar_picture_name"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="140dp"
+            android:backgroundTint="@color/nav_yellow"
+            android:fontFamily="@font/sarabun_light"
+            android:text="@string/next"
+            android:textColor="@color/nav_bg"
+            android:textSize="16sp"
+            app:iconTint="@color/nav_bg" />
+
+    </RelativeLayout>
+
+</FrameLayout>

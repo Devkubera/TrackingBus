@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">SUT Tracking Car</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- login page -->
+
+    <string name="login"><b>เข้าสู่ระบบ</b></string>
+    <string name="login_for_user"><b>(สำหรับผู้ใช้งานทั่วไป)</b></string>
+    <string name="login_for_driver"><b>(สำหรับผู้ขับรถ)</b></string>
+    <string name="email">อีเมล</string>
+    <string name="password">รหัสผ่าน</string>
+    <string name="rec_register">คุณยังไม่มีบัญชีหรอ ? <u>สมัครเลยสิ.</u></string>
+    <!-- register page -->
+
+    <string name="register"><b>สมัครสมาชิก</b></string>
+    <string name="next"><b>ต่อไป</b></string>
+    <string name="password_confirm">ยืนยันรหัสผ่าน</string>
+    <string name="register_name">ชื่อ-สกุล</string>
+    <string name="register_phone">เบอร์โทรศัพท์</string>
+    <string name="person_card">รูปถ่ายบัตรประชาชนด้านหน้า</string>
+    <string name="riding_card">รูปถ่ายใบขับขี่สาธารณะ</string>
+    <string name="bus_picture">ภาพของรถโดยสาร</string>
+    <string name="bus_number">หมายเลขทะเบียนรถ</string>
+</resources>
